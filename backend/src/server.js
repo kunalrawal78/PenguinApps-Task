@@ -3,13 +3,13 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-// Export for Vercel
-export default app;
+const PORT = process.env.PORT || 4000;
 
-// Only for local development
-if (process.env.VERCEL !== '1') {
-  const PORT = process.env.PORT || 4000;
+// For Vercel, we need to export the app for serverless functions
+if (process.env.NODE_ENV !== 'production') {
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
 }
+
+export default app;
