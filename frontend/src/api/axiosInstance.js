@@ -1,7 +1,8 @@
 import axios from "axios";
 
+const API_BASE_URL = 'https://penguin-apps-task.vercel.app';
 const axiosInstance = axios.create({
-    baseURL:"http://localhost:4000/api",
+    baseURL:`${API_BASE_URL}/api`,
 })
 
 axiosInstance.interceptors.request.use((config)=>{
