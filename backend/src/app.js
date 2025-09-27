@@ -8,7 +8,7 @@ const app = express();
 
 
 app.use(cors({ 
-  origin:"https://penguin-apps-task.vercel.app",
+  origin:"https://penguin-apps-task.vercel.app/login",
    credentials: true
 })); 
 
