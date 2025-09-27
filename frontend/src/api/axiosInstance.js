@@ -2,7 +2,7 @@ import axios from "axios";
 
 // const API_BASE_URL = 'https://penguin-apps-task.vercel.app';
 const axiosInstance = axios.create({
-    baseURL: "https://penguin-apps-task-zn58.vercel.app/api"
+    baseURL: "https://penguin-apps-task-zn58.vercel.app/api/auth"
 });
 
 axiosInstance.interceptors.request.use((config)=>{
