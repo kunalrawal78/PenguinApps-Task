@@ -9,7 +9,7 @@ const app = express();
 
 app.use(cors({ 
   origin: process.env.NODE_ENV === 'production' 
-    ? ["https://penguin-apps-task.vercel.app/"] 
+    ? ["https://penguin-apps-task.vercel.app/login"] 
     : "http://localhost:5173" 
 })); 
 
